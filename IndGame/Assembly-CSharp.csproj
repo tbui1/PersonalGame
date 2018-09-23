@@ -67,7 +67,8 @@
     <Compile Include="Assets\Resources\Prefabs\H.cs" />
     <Compile Include="Assets\Resources\Sound\S.cs" />
     <Compile Include="Assets\Resources\Sprites\Spr.cs" />
-    <Compile Include="Assets\Scripts\Delete me.cs" />
+    <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovementScript.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/thoai/PersonalGame/IndGame/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
