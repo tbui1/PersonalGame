@@ -18,9 +18,11 @@ public class ScoreUpdate : MonoBehaviour {
 
     public void IncrementScore(MonsterMovement enem)
     {
-        score += enem.score;
+        score++;
+        Debug.Log(score);
         enem.onDeath -= IncrementScore;
         PlayerPrefs.SetInt("score", score);
+
         scoreText.text = "Score: " + score;
     }
 

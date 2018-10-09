@@ -27,17 +27,18 @@ public class MonsterSpawner : MonoBehaviour {
         GameObject temp;
         for (int i = 0; i < 5; i++)
         {
+            Vector3 pos = new Vector3(gameObject.transform.position.x + i, gameObject.transform.position.y, gameObject.transform.position.z);
             float p = Random.value;
             if (p <= fst)
-                temp = Instantiate(mon1, gameObject.transform.position, Quaternion.identity);
+                temp = Instantiate(mon1, pos, Quaternion.identity);
             else if (p < snd)
-                temp = Instantiate(mon2, gameObject.transform.position, Quaternion.identity);
+                temp = Instantiate(mon2, pos, Quaternion.identity);
             else if (p < third)
-                temp = Instantiate(mon3, gameObject.transform.position, Quaternion.identity);
+                temp = Instantiate(mon3, pos, Quaternion.identity);
             else if (p < fourth)
-                temp = Instantiate(mon4, gameObject.transform.position, Quaternion.identity);
+                temp = Instantiate(mon4, pos, Quaternion.identity);
             else
-                temp = Instantiate(mon5, gameObject.transform.position, Quaternion.identity);
+                temp = Instantiate(mon5, pos, Quaternion.identity);
 
             ScoreUpdate sc = GameObject.Find("Score").GetComponent<ScoreUpdate>();
             MonsterMovement mm = temp.GetComponent<MonsterMovement>();

@@ -179,10 +179,10 @@ public class PlayerMovementScript : MonoBehaviour {
             collision.gameObject.GetComponent<MonsterMovement>().Death();
         }
 
-        if (collision.gameObject.layer == LayerMask.NameToLayer("ChangeScene"))
+        /*if (collision.gameObject.layer == LayerMask.NameToLayer("ChangeScene"))
         {
             SceneManager.LoadScene("Level2", LoadSceneMode.Single);
-        }
+        }*/
 
 
     }
