@@ -18,7 +18,7 @@ public class MonsterMovement : MonoBehaviour {
     public event OnDeath onDeath;
     public LayerMask buildingMask;
 
-    private BoxCollider2D hb;
+    //private BoxCollider2D hb;
     private SpriteRenderer sprRen;
     private Animator anim;
     private Rigidbody2D theRigidbody;
@@ -31,7 +31,7 @@ public class MonsterMovement : MonoBehaviour {
         dir = Movement.Left;
         sprRen = GetComponent<SpriteRenderer>();
         anim.SetBool("isMoving", true);
-        hb = GetComponent<BoxCollider2D>();
+        //hb = GetComponent<BoxCollider2D>();
     }
 	
 	// Update is called once per frame
@@ -65,10 +65,6 @@ public class MonsterMovement : MonoBehaviour {
             case Movement.Attacking:
                 break;
         }
-        if (sprRen.flipX)
-            hb.offset = new Vector2(-Mathf.Abs(hb.offset.x), hb.offset.y);
-        else
-            hb.offset = new Vector2(Mathf.Abs(hb.offset.x), hb.offset.y);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

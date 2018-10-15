@@ -132,7 +132,6 @@ public class PlayerMovementScript : MonoBehaviour {
             punchHB.offset = new Vector2(-Mathf.Abs(punchHB.offset.x), punchHB.offset.y);
         else
             punchHB.offset = new Vector2(Mathf.Abs(punchHB.offset.x), punchHB.offset.y);
-        //punchHB.enabled = true;
         float direction = (sprRen.flipX) ? -1.0f : 1.0f;
         theRigidbody.AddForce(new Vector2(direction * punchPower * 2, 0));
         anim.SetBool("isIdle", true);
@@ -191,6 +190,14 @@ public class PlayerMovementScript : MonoBehaviour {
     {
         //if (collision.gameObject.layer == LayerMask.NameToLayer("Monster") && (action != State.Walking))
         //    collision.gameObject.GetComponent<MonsterMovement>().death();
+    }
+
+    public bool IsAttacking()
+    {
+        if (action == State.Attacking)
+            return true;
+        else
+            return false;
     }
 
 }

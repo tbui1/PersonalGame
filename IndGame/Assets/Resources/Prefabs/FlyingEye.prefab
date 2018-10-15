@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 50260803968537386}
   - component: {fileID: 70936911011092754}
   - component: {fileID: 61480646915729786}
-  - component: {fileID: 114208413053519608}
+  - component: {fileID: 114250148813949092}
   m_Layer: 9
   m_Name: FlyingEye
   m_TagString: Monster
@@ -240,7 +240,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114208413053519608
+--- !u!114 &114250148813949092
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -248,12 +248,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1360010940134748}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a210265a09fef6b4f817720294fc0be7, type: 3}
+  m_Script: {fileID: 11500000, guid: 184f234e521e6a048b1502c960d5236c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   xOff: 0.3
   yOff: 0
-  fire: {fileID: 1946852347479860, guid: 373561383fa644a4ebd042f1d3f74e51, type: 2}
+  attack: {fileID: 1946852347479860, guid: 373561383fa644a4ebd042f1d3f74e51, type: 2}
 --- !u!114 &114814313493996606
 MonoBehaviour:
   m_ObjectHideFlags: 1
